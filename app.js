@@ -8,11 +8,11 @@ var session = require('express-session');
 var passport = require('passport');
 require('./models/models.js');
 var api = require('./routes/api');
+var index = require('./routes/index');
 var authenticate = require('./routes/authenticate')(passport);
 var mongoose = require('mongoose');
 mongoose.connect("mongodb://localhost:3000/test");
 var app = express();
-var port = process.env.PORT || 3000;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(passport.initialize());
 app.use(passport.session());
 
-//app.use('/', index);
+app.use('/', index);
 app.use('/api', api);
 app.use('/auth', authenticate);
 
