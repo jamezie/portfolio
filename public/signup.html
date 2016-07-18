@@ -1,3 +1,23 @@
-<div>
-Sign up page coming soon!
+<div class="row">
+	<div class="medium-6 medium-centered large-4 large-centered columns">
+		<form class="form-auth" ng-submit="login()">
+			<div class="row column log-in-form">
+				<h2>Signup</h2>
+				<label>Username			
+					<input type="username" ng-model="user.username" placeholder="Username"
+				  	class="form-control">
+			  </label>
+			  <label>Email
+					<input type="email" ng-model="user.email" placeholder="Email"
+				  	class="form-control">
+			  </label>
+			  <label>Password
+			  	<input type="password" ng-model="user.password" placeholder="Password"
+			     	class="form-control">
+		     </label>
+			  <input type="submit" value="login" class="button expanded"/>			  
+		  </div>
+		</form>
+		<p class="text-warning">{{error_message}}</p>
+	</div>
 </div>

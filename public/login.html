@@ -1,9 +1,19 @@
-<form class="form-auth" ng-submit="login()">
-	<h2>Login</h2>
-	<p class="text-warning">{{error_message}}</p>
-	<input type="username" ng-model="user.username" placeholder="Username"
-	  class="form-control"><br>
-  <input type="password" ng-model="user.password" placeholder="Password"
-     class="form-control"><br>
-  <input type="submit" value="login" class="btn btn-primary"/>
-</form>
+<div class="row">
+	<div class="medium-6 medium-centered large-4 large-centered columns">
+		<form class="form-auth" ng-submit="login()">
+			<div class="row column log-in-form">
+				<h2>Login</h2>
+				<label>Username			
+					<input type="username" ng-model="user.username" placeholder="Username"
+				  	class="form-control">
+			  </label>
+			  <label>Password
+			  	<input type="password" ng-model="user.password" placeholder="Password"
+			     	class="form-control">
+		     </label>
+			  <input type="submit" value="login" class="button expanded"/>			  
+		  </div>
+		</form>
+		<p class="text-warning">{{error_message}}</p>
+	</div>
+</div>
