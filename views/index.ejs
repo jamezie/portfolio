@@ -3,17 +3,31 @@
   <head>
   	<meta charset="utf-8">
     <title>James Portfolio</title>
-    <style>
-      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-        display: none !important;
-      }
-    </style>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='stylesheets/foundation.min.css'/>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
   </head>
   <body ng-controller="BodyCtrl">
-    <h1>{{title | uppercase}}</h1>
-    <p>Welcome to {{title}}</p>
+	  <nav class="top-bar" id="nav-rules">
+	  	<div class="wrap">
+		    <div class="top-bar-left" id="home-text">
+		    	<a href="#">James Keophavone</a>
+	    	</div>
+	    	<section class="top-bar-right">
+	    		<ul class="menu">
+			    	<li><a href="#/login">Login</a></li>
+			    	<li><a href="#/signup">Signup</a></li>
+		    	</ul>
+		    </section>
+	    </div>
+	  </nav>
+    <div> <!-- container for content of the page -->
+    	<div class="wrap" ng-view></div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+    <script src="javascripts/vendor/jquery.js"></script>
+    <script src="javascripts/vendor/foundation.min.js"></script>
+    <script src="javascripts/vendor/what-input.js"></script>
     <script src="javascripts/portfolio.js"></script>
   </body>
 </html>
