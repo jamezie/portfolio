@@ -1,28 +1,68 @@
+.lightened-2 {
+	background-color: rgba(255,255,255, .2);
+}
+
+.lightened-4 {
+	background-color: rgba(255,255,255, .4);
+}
+
+.lightened-6 {
+	background-color: rgba(255,255,255, .6);
+}
+
+.lightened-8 {
+	background-color: rgba(255,255,255, .8);
+}
+
+.force-clear-color {
+	background-color: transparent !important;
+} 
+
+body {
+	background: url("/img/subtle_grey.png") repeat-x;
+	z-index: 0;
+}
+
 .wrap {
 	width: 90%;
 	max-width: 10000px;
 	margin: 0 auto;
 }
 
-#home-text {
-	line-height: 60px;
-}
-
-#home-text a {
-	color: white;
-}
-
 #nav-rules {
-	background-color: #000000;
 	height: 60px;
 	padding: 0;
 }
 
-.top-bar-right ul li a {
-	display: inline-block;
-	line-height: 60px;
-	padding: 0px 10px;
+.accent-color {
+	color: #FF9900;
+}
+
+.text-color {
 	color: white;
+}
+
+.bottom-layer {
+	z-index: 0;
+}
+
+.mid-layer {
+	z-index: 200;
+}
+
+.top-layer {
+	z-index: 500;
+}
+
+.nav-item {
+	display: inline-block;
+	line-height: 1.5;
+	padding: 0px 10px;
+}
+
+.nav-item li a {
+	line-height: 1.5;
+	opacity: 1;
 }
 
 .top-bar-right ul {

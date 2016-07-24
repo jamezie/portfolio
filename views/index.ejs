@@ -6,16 +6,21 @@
     <link rel='stylesheet' href='stylesheets/foundation.css'/>
     <link rel="stylesheet" href="stylesheets/app.css"/>
   </head>
-  <body ng-controller="BodyCtrl">
-	  <nav class="top-bar" id="nav-rules">
+  <body ng-controller="BodyCtrl" class="bottom-layer">
+	  <nav class="top-bar lightened-2" id="nav-rules">
 	  	<div class="wrap">
-		    <div class="top-bar-left" id="home-text">
-		    	<a href="#">James Keophavone</a>
+		    <div class="top-bar-left top-layer">
+		    	<ul class="menu nav-item force-clear-color" data-dropdown-menu>
+		    		<li><a class="top-layer menu-text accent-color" href="#">James Keophavone</a></li>
+			    	<li><a class="accent-color" href="#/wall">Message Wall</a></li>
+			    	<li><a class="accent-color" href="#/game">Game</a></li>
+			    	<li><a class="accent-color" href="#/about">About</a></li>
+		    	</ul>
 	    	</div>
 	    	<section class="top-bar-right">
-	    		<ul class="menu">
-			    	<li><a href="#/login">Login</a></li>
-			    	<li><a href="#/signup">Signup</a></li>
+	    		<ul class="menu nav-item">
+			    	<li><a class="accent-color" href="#/login">Login</a></li>
+			    	<li><a class="accent-color" href="#/signup">Signup</a></li>
 		    	</ul>
 		    </section>
 	    </div>
